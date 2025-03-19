@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Your Name Photography</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Seerla Akhila</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Gallery Sections (Portraits, Landscapes, Events) -->
+    <div class="container mt-5">
+        <h2 id="portraits">Portraits</h2>
+        <div class="row">
+            <!-- Portrait Images (Replace placeholders) -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="portraits/portrait1.jpg" class="card-img-top" alt="Portrait 1">
+                    <div class="card-body">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#portraitModal1">
+                            Enlarge
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="portraits/portrait2.jpg" class="card-img-top" alt="Portrait 2">
+                    <div class="card-body">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#portraitModal2">
+                            Enlarge
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="portraits/portrait3.jpg" class="card-img-top" alt="Portrait 3">
+                    <div class="card-body">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#portraitModal3">
+                            Enlarge
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more portrait images as needed -->
+        </div>
+
+        <h2 id="landscapes" class="mt-5">Landscapes</h2>
+        <div class="row">
+            <!-- Landscape Images (Replace placeholders) -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="landscapes/landscape1.jpg" class="card-img-top" alt="Landscape 1">
+                    <div class="card-body">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#landscapeModal1">
+                            Enlarge
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="landscapes/landscape2.jpg" class="card-img-top" alt="Landscape 2">
+                    <div class="card-body">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#landscapeModal2">
+                            Enlarge
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="landscapes/landscape3.jpg" class="card-img-top" alt="Landscape 3">
+                    <div class="card-body">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#landscapeModal3">
+                            Enlarge
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more landscape images as needed -->
+        </div>
+
+        <h2 id="events" class="mt-5">Events</h2>
+        <div class="row">
+            <!-- Event Images (Replace placeholders) -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="events/event1.jpg" class="card-img-top" alt="Event 1">
+                    <div class="card-body">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#eventModal1">
+                            Enlarge
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="events/event2.jpg" class="card-img-top" alt="Event 2">
+                    <div class="card-body">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#eventModal2">
+                            Enlarge
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="events/event3.jpg" class="card-img-top" alt="Event 3">
+                    <div class="card-body">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#eventModal3">
+                            Enlarge
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more event images as needed -->
+        </div>
+    </div>
+
+    <!-- Modals (Repeat for each image) -->
+    <!-- Portrait Modals -->
+    <div class="modal fade" id="portraitModal1" tabindex="-1" role="dialog" aria-labelledby="portraitModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="portraits/portrait1.jpg" class="img-fluid" alt="Enlarged Portrait 1">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portrait Modals -->
+    <div class="modal fade" id="portraitModal2" tabindex="-1" role="dialog" aria-labelledby="portraitModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="portraits/portrait2.jpg" class="img-fluid" alt="Enlarged Portrait 2">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="portraitModal3" tabindex="-1" role="dialog" aria-labelledby="portraitModalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="portraits/portrait3.jpg" class="img-fluid" alt="Enlarged Portrait 3">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Landscape Modals -->
+    <div class="modal fade" id="landscapeModal1" tabindex="-1" role="dialog" aria-labelledby="landscapeModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="landscapes/landscape1.jpg" class="img-fluid" alt="Enlarged Landscape 1">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="landscapeModal2" tabindex="-1" role="dialog" aria-labelledby="landscapeModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="landscapes/landscape2.jpg" class="img-fluid" alt="Enlarged Landscape 2">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="landscapeModal3" tabindex="-1" role="dialog" aria-labelledby="landscapeModalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="landscapes/landscape3.jpg" class="img-fluid" alt="Enlarged Landscape 3">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Event Modals -->
+    <div class="modal fade" id="eventModal1" tabindex="-1" role="dialog" aria-labelledby="eventModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="events/event1.jpg" class="img-fluid" alt="Enlarged Event 1">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="eventModal2" tabindex="-1" role="dialog" aria-labelledby="eventModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="events/event2.jpg" class="img-fluid" alt="Enlarged Event 2">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="eventModal3" tabindex="-1" role="dialog" aria-labelledby="eventModalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="events/event3.jpg" class="img-fluid" alt="Enlarged Event 3">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Repeat the modal structure for the rest of the images -->
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        © 2024 Your Name Photography
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
